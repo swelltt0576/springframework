@@ -1,0 +1,5 @@
+spring data jpa
+
+
+无persistence.xml配置文件，使用spring data配置替代
+dao实现org.springframework.data.repository.Repository接口，不需额外代码
