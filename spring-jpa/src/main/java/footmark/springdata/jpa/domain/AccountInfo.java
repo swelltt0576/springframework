@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @Table(name = "t_accountinfo")
 public class AccountInfo implements Serializable {
   /**
-   * serialVersionUID:TODO(用一句话描述这个变量表示什么).
+   * serialVersionUID:
    * @since 1.0
    */
   private static final long serialVersionUID = 7477436428494722994L;
