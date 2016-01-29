@@ -34,21 +34,16 @@ public class ServiceAop {
     System.out.println("after trigger----------------");
   }
 
-//  @Around("execution(* cn.com.spring.service.ILoginService.login(..))")
-  public boolean around(JoinPoint joinPoint) {
-    try {
-      System.out.println("around trigger before------------");
-      Object result = ((ProceedingJoinPoint) joinPoint).proceed();
-      System.out.println("around trigger after------------");
-      return (boolean) result;
-    } catch (Throwable e) {
-      e.printStackTrace();
-    }
-
-    return true;
+  @Around("execution(* cn.com.spring.service.ILoginService.login(..))")
+  public boolean around(JoinPoint joinPoint) throws Throwable {
+    System.out.println("around trigger before------------");
+    Object result = ((ProceedingJoinPoint) joinPoint).proceed();
+    System.out.println("around trigger after------------");
+    return (boolean) result;
   }
 
-  @AfterThrowing(pointcut = "execution(* cn.com.spring.service.ILoginService.login(..))", throwing = "ex")
+  @AfterThrowing(pointcut = "execution(* cn.com.spring.service.ILoginService.login(..))",
+      throwing = "ex")
   public void afterThrow(JoinPoint joinPoint, Exception ex) {
     System.out.println("afterThrow trigger------------");
   }

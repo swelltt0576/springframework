@@ -16,11 +16,17 @@ import cn.com.spring.service.impl.LoginServiceImpl;
 @ComponentScan(basePackages = {"cn.com.spring.aop"})
 public class AppConfig {
 
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
     AnnotationConfigApplicationContext context =
         new AnnotationConfigApplicationContext(AppConfig.class);
     ILoginService login = context.getBean(ILoginService.class);
-    login.login("swell", "password");
+    try {
+      login.login("swell", "password");
+    } catch (Exception e) {
+      System.out.println("main exit -----------------" + e.getMessage());
+      e.printStackTrace();
+    }
+    context.close();
   }
 
   @Bean
