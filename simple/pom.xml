@@ -132,7 +132,5 @@
 		<developerConnection>scm:git:https://github.com/swelltt0576/springframework</developerConnection>
 		<url>https://github.com/swelltt0576/springframework</url>
 	</scm>
-	
-	
-	
+		
 </project>
