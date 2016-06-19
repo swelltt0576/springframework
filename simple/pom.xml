@@ -126,4 +126,12 @@
 		<finalName>simple</finalName>
 
 	</build>
+	
+	<scm>
+		<connection>scm:git:git://github.com/swelltt0576/springframework</connection>
+		<developerConnection>scm:git:git://github.com/swelltt0576/springframework</developerConnection>
+		<url>https://github.com/swelltt0576/springframework</url>
+	</scm>
+	
+	
 </project>
