@@ -128,8 +128,8 @@
 	</build>
 	
 	<scm>
-		<connection>scm:git:git://github.com/swelltt0576/springframework</connection>
-		<developerConnection>scm:git:git://github.com/swelltt0576/springframework</developerConnection>
+		<connection>scm:git:https://github.com/swelltt0576/springframework</connection>
+		<developerConnection>scm:git:https://github.com/swelltt0576/springframework</developerConnection>
 		<url>https://github.com/swelltt0576/springframework</url>
 	</scm>
 	
